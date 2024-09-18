@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electronics - ShopMate</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="products.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>ShopMate</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Categories</a>
+            <div class="dropdown-content">
+              <a href="clothing.html">Clothing</a>
+              <a href="electronics.html">Electronics</a>
+              <a href="home-furniture.html">Home & Furniture</a>
+              <a href="beauty-health.html">Beauty & Health</a>
+            </div>
+          </li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="products">
+      <h2>Electronics</h2>
+      <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <img
+            src="./Images-Electronics/flip.webp"
+            alt="Samsung Galaxy Z Flip6 5G"
+          />
+          <h3>Samsung Galaxy Z Flip6 5G</h3>
+          <p class="price">₹1,10,000</p>
+          <div class="action-container">
+            <label for="quantity1">Quantity:</label>
+            <input
+              type="number"
+              id="quantity1"
+              value="1"
+              min="1"
+              class="quantity"
+            />
+            <button
+              class="add-to-cart"
+              onclick="addToCart('Samsung Galaxy Z Flip6 5G', 110000, document.getElementById('quantity1').value)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <img
+            src="./Images-Electronics/fold.webp"
+            alt="Samsung Galaxy Z Fold6 5G"
+          />
+          <h3>Samsung Galaxy Z Fold6 5G</h3>
+          <p class="price">₹1,68,000</p>
+          <div class="action-container">
+            <label for="quantity2">Quantity:</label>
+            <input
+              type="number"
+              id="quantity2"
+              value="1"
+              min="1"
+              class="quantity"
+            />
+            <button
+              class="add-to-cart"
+              onclick="addToCart('Samsung Galaxy Z Fold6 5G', 168000, document.getElementById('quantity2').value)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <img src="./Images-Electronics/washer1.webp" alt="LG 7 Kg, 5 Star" />
+          <h3>LG 7Kg,5 Star Automatic Front Load Washing Machine</h3>
+          <p class="price">₹42,000</p>
+          <div class="action-container">
+            <label for="quantity2">Quantity:</label>
+            <input
+              type="number"
+              id="quantity2"
+              value="1"
+              min="1"
+              class="quantity"
+            />
+            <button
+              class="add-to-cart"
+              onclick="addToCart('LG 7Kg,5 Star Automatic Front Load Washing Machine', 42000, document.getElementById('quantity2').value)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-card">
+          <img
+            src="./Images-Electronics/microwave.jpg"
+            alt="Panasonic 23 L Convection Microwave Oven"
+          />
+          <h3>Panasonic 23 L Convection Microwave Oven</h3>
+          <p class="price">₹12,000</p>
+          <div class="action-container">
+            <label for="quantity2">Quantity:</label>
+            <input
+              type="number"
+              id="quantity2"
+              value="1"
+              min="1"
+              class="quantity"
+            />
+            <button
+              class="add-to-cart"
+              onclick="addToCart('Panasonic 23 L Convection Microwave Oven', 12000, document.getElementById('quantity2').value)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+          <img src="./Images-Electronics/iphone.webp" alt="Apple iPhone 15" />
+          <h3>Apple iPhone 15</h3>
+          <p class="price">₹82,169</p>
+          <div class="action-container">
+            <label for="quantity3">Quantity:</label>
+            <input
+              type="number"
+              id="quantity3"
+              value="1"
+              min="1"
+              class="quantity"
+            />
+            <button
+              class="add-to-cart"
+              onclick="addToCart('Apple iPhone 15', 82169, document.getElementById('quantity3').value)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+          <img
+            src="./Images-Electronics/S24.jpg"
+            alt="Samsung Galaxy S23 Ultra 5G"
+          />
+          <h3>Samsung Galaxy S23 Ultra 5G</h3>
+          <p class="price">₹79,999</p>
+          <div class="action-container">
+            <label for="quantity3">Quantity:</label>
+            <input
+              type="number"
+              id="quantity3"
+              value="1"
+              min="1"
+              class="quantity"
+            />
+            <button
+              class="add-to-cart"
+              onclick="addToCart('Samsung Galaxy S23 Ultra 5G', 79999, document.getElementById('quantity3').value)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 7-->
+        <div class="product-card">
+          <img
+            src="./Images-Electronics/ac.webp"
+            alt="Daikin 1.5 Ton 3 Star Inverter Split AC"
+          />
+          <h3>Daikin 1.5 Ton 3 Star Inverter Split AC</h3>
+          <p class="price">₹68,999</p>
+          <div class="action-container">
+            <label for="quantity3">Quantity:</label>
+            <input
+              type="number"
+              id="quantity3"
+              value="1"
+              min="1"
+              class="quantity"
+            />
+            <button
+              class="add-to-cart"
+              onclick="addToCart('Daikin 1.5 Ton 3 Star Inverter Split AC', 68999, document.getElementById('quantity3').value)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2024 ShopMate. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function addToCart(name, price, quantity) {
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        let existingItem = cart.find((item) => item.name === name);
+
+        if (existingItem) {
+          existingItem.quantity += parseInt(quantity);
+        } else {
+          cart.push({ name, price, quantity: parseInt(quantity) });
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+        alert("Item added to cart!");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>ShopMate</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Categories</a>
+            <div class="dropdown-content">
+              <a href="clothing.html">Clothing</a>
+              <a href="electronics.html">Electronics</a>
+              <a href="home-furniture.html">Home & Furniture</a>
+              <a href="beauty-health.html">Beauty & Health</a>
+            </div>
+          </li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="carousel">
+      <div class="carousel-container">
+        <input type="radio" name="slider" id="slide1" checked />
+        <input type="radio" name="slider" id="slide2" />
+
+        <div class="slides">
+          <div class="slide">
+            <img src="./Images/img1.jpg" alt="Slide 1 Image 1" />
+            <img src="./Images/img2.jpg" alt="Slide 1 Image 2" />
+            <img src="./Images/img3.jpg" alt="Slide 1 Image 3" />
+          </div>
+          <div class="slide">
+            <img src="./Images/img4.jpg" alt="Slide 2 Image 1" />
+            <img src="./Images/img5.jpg" alt="Slide 2 Image 2" />
+            <img src="./Images/img6.jpg" alt="Slide 2 Image 3" />
+          </div>
+        </div>
+
+        <div class="navigation">
+          <label for="slide1" class="bar"></label>
+          <label for="slide2" class="bar"></label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="categories-section">
+      <h2>Shop by Category</h2>
+      <div class="category-container">
+        <div class="category-card">
+          <a href="clothing.html">
+            <img src="./Images/clothing.jpeg" alt="Clothing" />
+            <h3>Clothing</h3>
+          </a>
+        </div>
+        <div class="category-card">
+          <a href="electronics.html">
+            <img src="./Images/electronics.jpeg" alt="Electronics" />
+            <h3>Electronics</h3>
+          </a>
+        </div>
+        <div class="category-card">
+          <a href="home-furniture.html">
+            <img src="./Images/home.jpeg" alt="Home & Furniture" />
+            <h3>Home & Furniture</h3>
+          </a>
+        </div>
+        <div class="category-card">
+          <a href="beauty-health.html">
+            <img src="./Images/beauty.jpeg" alt="Beauty & Health" />
+            <h3>Beauty & Health</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2024 ShopMate. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Automatic timer for the carousel (5 seconds interval)
+      let counter = 1;
+      setInterval(() => {
+        document.getElementById("slide" + counter).checked = true;
+        counter++;
+        if (counter > 3) {
+          counter = 1;
+        }
+      }, 3000);
+    </script>
+  </body>
+</html>

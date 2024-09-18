@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment - ShopMate</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="payment.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>ShopMate</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Categories</a>
+            <div class="dropdown-content">
+              <a href="clothing.html">Clothing</a>
+              <a href="electronics.html">Electronics</a>
+              <a href="home-furniture.html">Home & Furniture</a>
+              <a href="beauty-health.html">Beauty & Health</a>
+            </div>
+          </li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="payment">
+      <h2>Payment Details</h2>
+      <form action="#" method="post" class="payment-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="card-number">Card Number:</label>
+          <input type="text" id="card-number" name="card-number" required />
+        </div>
+        <div class="form-group">
+          <label for="expiry-date">Expiry Date:</label>
+          <input
+            type="text"
+            id="expiry-date"
+            name="expiry-date"
+            required
+            placeholder="MM/YY"
+          />
+        </div>
+        <div class="form-group">
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" name="cvv" required />
+        </div>
+        <button type="submit" class="submit-button">Pay Now</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2024 ShopMate. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

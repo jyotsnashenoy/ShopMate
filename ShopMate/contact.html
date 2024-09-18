@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - ShopMate</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      .contact-container {
+        padding: 20px;
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .contact-container h2 {
+        font-size: 2em;
+        margin-top: 0;
+      }
+      .contact-container form {
+        display: flex;
+        flex-direction: column;
+      }
+      .contact-container label {
+        font-size: 1em;
+        margin-bottom: 5px;
+      }
+      .contact-container input,
+      .contact-container textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      .contact-container button {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 1em;
+        transition: background-color 0.3s ease;
+      }
+      .contact-container button:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>ShopMate</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Categories</a>
+            <div class="dropdown-content">
+              <a href="clothing.html">Clothing</a>
+              <a href="electronics.html">Electronics</a>
+              <a href="home-furniture.html">Home & Furniture</a>
+              <a href="beauty-health.html">Beauty & Health</a>
+            </div>
+          </li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <footer>
+      <p>© 2024 ShopMate. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          alert("Your message has been sent successfully!");
+        });
+    </script>
+  </body>
+</html>

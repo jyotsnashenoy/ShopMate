@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - ShopMate</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>ShopMate</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Categories</a>
+            <div class="dropdown-content">
+              <a href="clothing.html">Clothing</a>
+              <a href="electronics.html">Electronics</a>
+              <a href="home-furniture.html">Home & Furniture</a>
+              <a href="beauty-health.html">Beauty & Health</a>
+            </div>
+          </li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="checkout">
+      <h2>Checkout</h2>
+
+      <!-- Headings for Cart Items -->
+      <div class="cart-headings">
+        <span class="heading-name">Product Name</span>
+        <span class="heading-quantity">Quantity</span>
+        <span class="heading-total">Total Price</span>
+        <span class="heading-remove">Remove</span>
+        <!-- Added heading for Remove -->
+      </div>
+
+      <div id="cart-items"></div>
+      <p id="total-price"></p>
+
+      <button onclick="clearCart()">Clear Cart</button>
+      <button class="pay-button">
+        <a href="payment.html" class="pay-button">Pay Now</a>
+      </button>
+    </section>
+
+    <footer>
+      <p>© 2024 ShopMate. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function displayCart() {
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        let cartItems = document.getElementById("cart-items");
+        let totalPrice = 0;
+        cartItems.innerHTML = "";
+
+        cart.forEach((item, index) => {
+          let itemDiv = document.createElement("div");
+          itemDiv.className = "cart-item";
+          itemDiv.innerHTML = `
+            <span class="item-name">${item.name}</span>
+            <span class="item-quantity">Qty: ${item.quantity}</span>
+            <span class="item-total">₹${item.price * item.quantity}</span>
+            <button class="remove-button" onclick="removeItem(${index})">Remove</button>
+          `;
+          cartItems.appendChild(itemDiv);
+          totalPrice += item.price * item.quantity;
+        });
+
+        document.getElementById(
+          "total-price"
+        ).innerText = `Total Price: ₹${totalPrice}`;
+      }
+
+      function removeItem(index) {
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        cart.splice(index, 1);
+        localStorage.setItem("cart", JSON.stringify(cart));
+        displayCart();
+      }
+
+      function clearCart() {
+        localStorage.removeItem("cart");
+        displayCart();
+      }
+
+      window.onload = displayCart;
+    </script>
+  </body>
+</html>
