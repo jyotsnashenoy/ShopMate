@@ -34,21 +34,19 @@
     <section class="checkout">
       <h2>Checkout</h2>
 
-      <!-- Headings for Cart Items -->
       <div class="cart-headings">
         <span class="heading-name">Product Name</span>
         <span class="heading-quantity">Quantity</span>
         <span class="heading-total">Total Price</span>
         <span class="heading-remove">Remove</span>
-        <!-- Added heading for Remove -->
       </div>
 
       <div id="cart-items"></div>
       <p id="total-price"></p>
 
       <button onclick="clearCart()">Clear Cart</button>
-      <button class="pay-button">
-        <a href="payment.html" class="pay-button">Pay Now</a>
+      <button class="pay-button" onclick="window.location.href='payment.html'">
+        Pay Now
       </button>
     </section>
 
