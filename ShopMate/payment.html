@@ -33,7 +33,12 @@
 
     <section class="payment">
       <h2>Payment Details</h2>
-      <form action="#" method="post" class="payment-form">
+      <form
+        action="#"
+        method="post"
+        class="payment-form"
+        onsubmit="handlePayment(event)"
+      >
         <div class="form-group">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
@@ -64,4 +69,16 @@
       <p>© 2024 ShopMate. All rights reserved.</p>
     </footer>
   </body>
+  <script>
+    function handlePayment(event) {
+      event.preventDefault();
+
+      alert("It will be delivered in 7 working days");
+
+      setTimeout(function () {
+        localStorage.removeItem("cartItems");
+        window.location.href = "home.html";
+      }, 3000);
+    }
+  </script>
 </html>
