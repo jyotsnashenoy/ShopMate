@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home and Furniture - ShopMate</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="products.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>ShopMate</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Categories</a>
+            <div class="dropdown-content">
+              <a href="clothing.html">Clothing</a>
+              <a href="electronics.html">Electronics</a>
+              <a href="home-furniture.html">Home & Furniture</a>
+              <a href="beauty-health.html">Beauty & Health</a>
+            </div>
+          </li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="products">
+      <h2>Electronics</h2>
+      <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <img
+            src="./images-Home/img1.jpg"
+            alt=" Solid Sheesham Wood Wooden 3 Seater Sofa"
+          />
+          <h3>Solid Sheesham Wood Wooden 3 Seater Sofa</h3>
+          <p class="price">₹31,000</p>
+          <div class="action-container">
+            <label for="quantity1">Quantity:</label>
+            <input
+              type="number"
+              id="quantity1"
+              value="1"
+              min="1"
+              class="quantity"
+            />
+            <button
+              class="add-to-cart"
+              onclick="addToCart(' Solid Sheesham Wood Wooden 3 Seater Sofa', 31000, document.getElementById('quantity1').value)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <img
+            src="./images-Home/img2.jpg"
+            alt="3pcs Astronaut Figurine Home Decor"
+          />
+          <h3>3pcs Astronaut Figurine Home Decor</h3>
+          <p class="price">₹1,680</p>
+          <div class="action-container">
+            <label for="quantity2">Quantity:</label>
+            <input
+              type="number"
+              id="quantity2"
+              value="1"
+              min="1"
+              class="quantity"
+            />
+            <button
+              class="add-to-cart"
+              onclick="addToCart('3pcs Astronaut Figurine Home Decor', 1680, document.getElementById('quantity2').value)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <img
+            src="./images-Home/img3.jpg"
+            alt="100% Cotton Comforter for Double Bed Queen Size"
+          />
+          <h3>100% Cotton Comforter for Double Bed Queen Size</h3>
+          <p class="price">₹2,200</p>
+          <div class="action-container">
+            <label for="quantity2">Quantity:</label>
+            <input
+              type="number"
+              id="quantity2"
+              value="1"
+              min="1"
+              class="quantity"
+            />
+            <button
+              class="add-to-cart"
+              onclick="addToCart('100% Cotton Comforter for Double Bed Queen Size', 2200, document.getElementById('quantity2').value)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-card">
+          <img
+            src="./images-Home/img4.jpg"
+            alt=" Wooden Intersecting Floating Shelf"
+          />
+          <h3>Wooden Intersecting Floating Shelf</h3>
+          <p class="price">₹899</p>
+          <div class="action-container">
+            <label for="quantity2">Quantity:</label>
+            <input
+              type="number"
+              id="quantity2"
+              value="1"
+              min="1"
+              class="quantity"
+            />
+            <button
+              class="add-to-cart"
+              onclick="addToCart(' Wooden Intersecting Floating Shelf', 899, document.getElementById('quantity2').value)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+          <img
+            src="./images-Home/img5.jpg"
+            alt="Jute Floral Print Cushion Covers"
+          />
+          <h3>Jute Floral Print Cushion Covers</h3>
+          <p class="price">₹699</p>
+          <div class="action-container">
+            <label for="quantity3">Quantity:</label>
+            <input
+              type="number"
+              id="quantity3"
+              value="1"
+              min="1"
+              class="quantity"
+            />
+            <button
+              class="add-to-cart"
+              onclick="addToCart('Jute Floral Print Cushion Covers', 699, document.getElementById('quantity3').value)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+          <img
+            src="./images-Home/img6.jpg"
+            alt="Little Flower Super Soft Anti Skid Mat"
+          />
+          <h3>Little Flower Super Soft Anti Skid Mat</h3>
+          <p class="price">₹799</p>
+          <div class="action-container">
+            <label for="quantity3">Quantity:</label>
+            <input
+              type="number"
+              id="quantity3"
+              value="1"
+              min="1"
+              class="quantity"
+            />
+            <button
+              class="add-to-cart"
+              onclick="addToCart('Little Flower Super Soft Anti Skid Mat', 799, document.getElementById('quantity3').value)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 7-->
+        <div class="product-card">
+          <img
+            src="./Images-Home/img7.jpg"
+            alt="Sheesham Wood 6 Seater Sofa Set"
+          />
+          <h3>Sheesham Wood 6 Seater Sofa Set</h3>
+          <p class="price">₹38,999</p>
+          <div class="action-container">
+            <label for="quantity3">Quantity:</label>
+            <input
+              type="number"
+              id="quantity3"
+              value="1"
+              min="1"
+              class="quantity"
+            />
+            <button
+              class="add-to-cart"
+              onclick="addToCart('Sheesham Wood 6 Seater Sofa Set', 38999, document.getElementById('quantity3').value)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2024 ShopMate. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function addToCart(name, price, quantity) {
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        let existingItem = cart.find((item) => item.name === name);
+
+        if (existingItem) {
+          existingItem.quantity += parseInt(quantity);
+        } else {
+          cart.push({ name, price, quantity: parseInt(quantity) });
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+        alert("Item added to cart!");
+      }
+    </script>
+  </body>
+</html>

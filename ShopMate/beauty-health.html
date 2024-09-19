@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home and Furniture - ShopMate</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="products.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>ShopMate</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Categories</a>
+            <div class="dropdown-content">
+              <a href="clothing.html">Clothing</a>
+              <a href="electronics.html">Electronics</a>
+              <a href="home-furniture.html">Home & Furniture</a>
+              <a href="beauty-health.html">Beauty & Health</a>
+            </div>
+          </li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="products">
+      <h2>Beauty and Health</h2>
+      <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <img
+            src="./Images-Beauty/img1.jpg"
+            alt="Hyaluronic Sunscreen Aqua "
+          />
+          <h3>Hyaluronic Sunscreen Aqua</h3>
+          <p class="price">₹499</p>
+          <div class="action-container">
+            <label for="quantity1">Quantity:</label>
+            <input
+              type="number"
+              id="quantity1"
+              value="1"
+              min="1"
+              class="quantity"
+            />
+            <button
+              class="add-to-cart"
+              onclick="addToCart('Hyaluronic Sunscreen Aqua ', 499, document.getElementById('quantity1').value)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <img
+            src="./Images-Beauty/img2.jpg"
+            alt="Concealer Palette Waterproof"
+          />
+          <h3>Concealer Palette Waterproof</h3>
+          <p class="price">₹230</p>
+          <div class="action-container">
+            <label for="quantity2">Quantity:</label>
+            <input
+              type="number"
+              id="quantity2"
+              value="1"
+              min="1"
+              class="quantity"
+            />
+            <button
+              class="add-to-cart"
+              onclick="addToCart('Concealer Palette Waterproof', 230, document.getElementById('quantity2').value)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <img src="./Images-Beauty/img3.jpg" alt="Micellar Cleansing Water" />
+          <h3>Micellar Cleansing Water</h3>
+          <p class="price">₹249</p>
+          <div class="action-container">
+            <label for="quantity2">Quantity:</label>
+            <input
+              type="number"
+              id="quantity2"
+              value="1"
+              min="1"
+              class="quantity"
+            />
+            <button
+              class="add-to-cart"
+              onclick="addToCart(' Micellar Cleansing Water', 249, document.getElementById('quantity2').value)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-card">
+          <img src="./Images-Beauty/img4.jpg" alt="Chyawanprash - 950g" />
+          <h3>Chyawanprash - 950gf</h3>
+          <p class="price">₹349</p>
+          <div class="action-container">
+            <label for="quantity2">Quantity:</label>
+            <input
+              type="number"
+              id="quantity2"
+              value="1"
+              min="1"
+              class="quantity"
+            />
+            <button
+              class="add-to-cart"
+              onclick="addToCart('Chyawanprash - 950g', 349, document.getElementById('quantity2').value)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+          <img src="./Images-Beauty/img5.jpg" alt=" Vitamin C Face Serum" />
+          <h3>Vitamin C Face Serum</h3>
+          <p class="price">₹619</p>
+          <div class="action-container">
+            <label for="quantity3">Quantity:</label>
+            <input
+              type="number"
+              id="quantity3"
+              value="1"
+              min="1"
+              class="quantity"
+            />
+            <button
+              class="add-to-cart"
+              onclick="addToCart('Vitamin C Face Serum', 619, document.getElementById('quantity3').value)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+          <img src="./Images-Beauty/img6.jpg" alt="Antiseptic Jumbo Bandage" />
+          <h3>Antiseptic Jumbo Bandage</h3>
+          <p class="price">₹100</p>
+          <div class="action-container">
+            <label for="quantity3">Quantity:</label>
+            <input
+              type="number"
+              id="quantity3"
+              value="1"
+              min="1"
+              class="quantity"
+            />
+            <button
+              class="add-to-cart"
+              onclick="addToCart('Antiseptic Jumbo Bandage', 100, document.getElementById('quantity3').value)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 7-->
+        <div class="product-card">
+          <img src="./Images-Beauty/img7.jpg" alt="Turmeric Juice 1L" />
+          <h3>Turmeric Juice 1L</h3>
+          <p class="price">₹549</p>
+          <div class="action-container">
+            <label for="quantity3">Quantity:</label>
+            <input
+              type="number"
+              id="quantity3"
+              value="1"
+              min="1"
+              class="quantity"
+            />
+            <button
+              class="add-to-cart"
+              onclick="addToCart('Turmeric Juice 1L', 549, document.getElementById('quantity3').value)"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2024 ShopMate. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function addToCart(name, price, quantity) {
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        let existingItem = cart.find((item) => item.name === name);
+
+        if (existingItem) {
+          existingItem.quantity += parseInt(quantity);
+        } else {
+          cart.push({ name, price, quantity: parseInt(quantity) });
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+        alert("Item added to cart!");
+      }
+    </script>
+  </body>
+</html>
